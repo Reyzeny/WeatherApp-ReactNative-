@@ -57,7 +57,7 @@ export default class App extends Component {
     const {loading, error, location, weather, temperature} = this.state;
     return (
       <View style={styles.container} behavior="padding">
-      <StatusBar barStyle="light-content"/>
+      <StatusBar barStyle="light-content" backgroundColor="transparent"/>
         <ImageBackground
           source={getImageForWeather(weather)}
           style={styles.imageContainer}
